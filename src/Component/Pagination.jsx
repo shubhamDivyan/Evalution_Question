@@ -7,12 +7,12 @@ const Pagination = ({totalPage,currentPage,page}) => {
     }
   return (
     <>
-        {/* {pageNumber.map((pageNumber)=>{
+        {pageNumber.map((pageNumber)=>(
             <button key={pageNumber} onClick={()=>page(pageNumber)}>
                 {pageNumber}
             </button>
-        })} */}
-        <h2>Hello From Pagination File</h2>
+        ))}
+        {/* <h2>Hello From Pagination File</h2> */}
     </>
   )
 }

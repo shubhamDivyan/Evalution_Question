@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import ProductItem from './ProductItem';
 // import ProductItem from './ProductItem';
-// import Pagination from './Pagination';
+import ProductItem from './ProductItem';
+import Pagination from './Pagination';
 
 const Product = () => {
     const [products,setProduct]=useState([]);
@@ -36,13 +36,13 @@ const Product = () => {
         <>
             <p>Product Item</p>
             {/* <ProductItem/> */}
-            {currentitem.map((product)=>{
+            {currentitem.map((product)=>(
                 <ProductItem key={product.id} product={product}/>
                 // console.log(product)
                 // console.log(product.id)
-            })}
+            ))}
 
-            {/* <Pagination totalPage={totalPage} currentPage={currentPage} page={page}/> */}
+            <Pagination totalPage={totalPage} currentPage={currentPage} page={page}/>
         </>
     </div>
   )
